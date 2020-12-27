@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         buton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String pass = password.getText().toString();//
+                String pass = password.getText().toString();
                 String level = lev.getText().toString();
                 Map<String, Object> loagin = PasswordUtils.Loagin(Integer.parseInt(level), pass, MainActivity.this);
                 Log.i("liuhongliang map", loagin.toString());
